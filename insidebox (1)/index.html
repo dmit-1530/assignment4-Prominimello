@@ -4,13 +4,37 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>InsideBox</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Nunito:ital@0;1&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-    <header>
+    <header class="sidebar">
         <h1><span>Inside</span>Box</h1>
-        <p>Welcome back</p>
+        <p class="welcome">Welcome back</p>
         <nav>
             <!-- Create the main level and the secondary level (dropdown) navigation here -->
+             <ul class="menu">
+                <li class="has-drop">
+                    <a href="#">
+                        <img src="img/profile.svg" alt="Profile icon">
+                        <span>Profile</span>
+                        <img src="img/arrow.svg" alt="Dropdown arrow" class="arrow">
+                    </a>
+                <ul class="dropdown">
+                    <li><a href="#">Dashboard</a></li>
+                    <li><a href="#">Calander</a></li>
+                    <li><a href="#">Settings</a></li>
+                    <li><a href="#">Sign Out</a></li>
+                </ul>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="img/courses.svg" alt="Courses icon">
+                    </a>
+                </li>
+             </ul>
         </nav>
     </header>
 </body>
