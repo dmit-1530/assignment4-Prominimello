@@ -1,3 +1,51 @@
 body {
-    background-color: #eee;
+    background-color: #eeeeee;
+    font-family: "Manrope", sans-serif;
+}
+.sidebar {
+    width: 328px;
+    height: 1024px;
+    background-color: #ffffff;
+}
+h1 {
+    font-family:"Nunito", sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+    letter-spacing: -3%;
+    line-height: 150%;
+    color: #727b81;
+}
+h1 span {
+    color: #0a91de;
+}
+.welcome {
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 150%;
+    color: #727b81;
+}
+.menu {
+    list-style: none;
+    padding: 0;
+    margin: 32px 0 0 16px;
+}
+.menu li {
+    margin-bottom: 24px;
+}
+.menu a {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    text-decoration: none;
+    color: #666f74;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 150%;
+}
+.menu img {
+    width: 27px;
+    height: 27px;
+}
+.has-drop {
+    position: relative;
 }
