@@ -4,8 +4,10 @@ body {
 }
 .sidebar {
     width: 328px;
-    height: 1024px;
+    height: 100vh;
     background-color: #ffffff;
+    padding: 16px;
+    box-sizing: border-box;
 }
 h1 {
     font-family:"Nunito", sans-serif;
@@ -27,10 +29,10 @@ h1 span {
 .menu {
     list-style: none;
     padding: 0;
-    margin: 32px 0 0 16px;
+    margin-top: 40px;
 }
 .menu li {
-    margin-bottom: 24px;
+    margin-bottom: 32px;
 }
 .menu a {
     display: flex;
@@ -46,6 +48,38 @@ h1 span {
     width: 27px;
     height: 27px;
 }
-.has-drop {
+.has-dropdown > a:hover span {
+    font-weight: 700;
+}
+.has-dropdown {
     position: relative;
+}
+.dropdown {
+    position: absolute;
+    top: 0;
+    left: 200px;
+    width: 174px;
+    background-color: #ffffff;
+    border: 1px solid #0a91de;
+    border-radius: 7px;
+    opacity: 0;
+    visibility: hidden;
+    list-style: none;
+}
+.has-dropdown:hover .dropdown {
+    opacity: 1;
+    visibility: visible;
+}
+.dropdown li {
+    margin: 0;
+}
+.dropdown a {
+    display: block;
+    padding: 10px 16px;
+    font-size: 18px;
+    font-weight: 500;
+    color: #666f74;
+}
+.dropdown a:hover {
+    color: #0a91de;
 }
